@@ -1,0 +1,126 @@
+/* -----------------------------
+   Background only (no layout!)
+------------------------------ */
+body {
+    /* keep the dark gradient you liked */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #eee;
+  }
+  
+  /* -----------------------------
+     Login page wrapper
+     (centers ONLY the card)
+  ------------------------------ */
+  .login-page {
+    /* use its own layout so header/footer remain full width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 16px;
+    /* let the area between header+footer breathe */
+    min-height: 70vh;
+  }
+  
+  /* -----------------------------
+     Card
+  ------------------------------ */
+  .login-card {
+    background: #1c1f26;
+    color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    text-align: center;
+  }
+  
+  .login-card h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  .login-card .tagline {
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: #cfd3da;
+  }
+  
+  /* -----------------------------
+     Error
+  ------------------------------ */
+  .error {
+    background: rgba(255,0,0,0.12);
+    color: #ff7d7d;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+  
+  /* -----------------------------
+     Form
+  ------------------------------ */
+  .form-group { margin-bottom: 18px; text-align: left; }
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    color: #bfc6d0;
+    margin-bottom: 6px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #2f3540;
+    background: #262b33;
+    color: #fff;
+    font-size: 14px;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #4e73df;
+    box-shadow: 0 0 0 3px rgba(78,115,223,.25);
+  }
+  
+  /* -----------------------------
+     Button
+  ------------------------------ */
+  .btn-login {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4e73df, #1c3faa);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: transform .15s ease, filter .2s ease;
+  }
+  
+  .btn-login:hover { transform: translateY(-2px); filter: brightness(1.05); }
+  
+  /* -----------------------------
+     Register link
+  ------------------------------ */
+  .register-link {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #bfc6d0;
+    text-align: center;
+  }
+  .register-link a { color: #8eb6ff; text-decoration: none; }
+  .register-link a:hover { text-decoration: underline; }
+  
+  /* Optional: keep the card nicely centered on taller screens */
+  @media (min-height: 900px) {
+    .login-page { min-height: 76vh; }
+  }
+  

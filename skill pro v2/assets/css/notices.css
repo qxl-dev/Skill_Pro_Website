@@ -1,0 +1,141 @@
+/* =========================================
+   Notices Page (Dark / Blue theme)
+   file: assets/css/notices.css
+========================================= */
+
+/* Page background (in case global style is light) */
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #262626);
+  color: #eee;
+  font-family: Arial, sans-serif;
+}
+
+/* Simple container helper (matches your site) */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------- Hero ---------- */
+.notices-hero {
+  background: linear-gradient(135deg, #0d1b3d, #1b3f7a, #2b74df);
+  color: #fff;
+  padding: 70px 20px;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.6);
+}
+
+.notices-hero h1 {
+  margin: 0 0 10px;
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+.notices-hero p {
+  margin: 0;
+  opacity: .92;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* ---------- Section wrapper ---------- */
+.notices-section {
+  padding: 40px 0 60px;
+}
+
+/* ---------- Grid ---------- */
+.notices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+}
+
+/* ---------- Card ---------- */
+.notice-card {
+  background: #181818;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 8px 22px rgba(0,0,0,.55);
+  transition: transform .28s ease, box-shadow .28s ease, background .28s ease;
+}
+
+.notice-card:hover {
+  transform: translateY(-6px);
+  background: #1f1f1f;
+  box-shadow: 0 16px 34px rgba(0,0,0,.8);
+}
+
+.notice-card__head {
+  border-left: 5px solid #2b74df;
+  padding-left: 12px;
+  margin-bottom: 12px;
+}
+
+/* Title + date */
+.notice-card h3 {
+  margin: 4px 0 6px;
+  font-size: 1.2rem;
+  color: #8ec2ff;
+}
+
+.notice-card .date {
+  display: block;
+  font-size: .85rem;
+  color: #bfbfbf;
+}
+
+/* Snippet text */
+.notice-card .message {
+  margin: 10px 0 16px;
+  color: #d3d3d3;
+  line-height: 1.55;
+  min-height: 48px; /* keeps heights consistent */
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  font-size: .75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+  border: 1px solid transparent;
+  letter-spacing: .2px;
+}
+
+.badge-default  { background:#0f244a; color:#a8d0ff; border-color:#2b74df; }
+.badge-holiday  { background:#402020; color:#ffc7c7; border-color:#ff6b6b; }
+.badge-workshop { background:#203c20; color:#bff0bf; border-color:#3cb371; }
+.badge-job      { background:#1f2b3c; color:#cfe4ff; border-color:#2b74df; }
+.badge-batch    { background:#26203d; color:#dbc8ff; border-color:#7c5cff; }
+
+/* Buttons */
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 2px solid #2b74df;
+  color: #a8c9ff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background .25s ease, color .25s ease, transform .2s ease;
+}
+
+.btn-secondary:hover {
+  background: #2b74df;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Empty State */
+.empty-state {
+  background: #161616;
+  border: 1px dashed #333;
+  border-radius: 14px;
+  padding: 40px 20px;
+  text-align: center;
+  color: #cfcfcf;
+  box-shadow: 0 4px 18px rgba(0,0,0,.45);
+}

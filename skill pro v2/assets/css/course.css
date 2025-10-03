@@ -1,0 +1,181 @@
+
+
+/* Page background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #eee;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #262626);
+}
+
+/* -------------------------------
+   Hero (title + category)
+-------------------------------- */
+.course-hero {
+  /* dark blue gradient, with optional hero image behind it */
+  background:
+    linear-gradient(135deg, rgba(13,27,61,.92), rgba(27,63,122,.90), rgba(38,113,213,.88)),
+    url("../images/coursehero.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 72px 20px;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.55);
+}
+
+.course-hero h1 {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+
+.course-hero .category {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  font-weight: 300;
+  opacity: .9;
+}
+
+/* -------------------------------
+   Main container + cards
+-------------------------------- */
+.course-container {
+  max-width: 1100px;
+  margin: 48px auto;
+  padding: 0 20px;
+  display: grid;
+  gap: 28px;
+}
+
+.course-container section {
+  background: #181818;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 8px 22px rgba(0,0,0,.55);
+  transition: transform .28s ease, box-shadow .28s ease, background .28s ease;
+}
+
+.course-container section:hover {
+  transform: translateY(-6px);
+  background: #1f1f1f;
+  box-shadow: 0 16px 36px rgba(0,0,0,.75);
+}
+
+/* headings inside cards */
+.course-container h2 {
+  font-size: 1.55rem;
+  margin: 0 0 16px;
+  color: #8ec2ff;
+  border-left: 6px solid #2b74df;
+  padding-left: 12px;
+}
+
+/* body text */
+.course-container p {
+  color: #d6d6d6;
+  line-height: 1.7;
+  margin: 0 0 14px;
+  font-size: .98rem;
+}
+
+/* lists (modules, careers, etc.) */
+.course-container ul {
+  list-style: disc;
+  padding-left: 24px;
+  margin: 6px 0 2px;
+}
+
+.course-container li {
+  margin: 8px 0;
+  transition: color .2s ease;
+}
+.course-container li:hover { color: #79b5ff; }
+
+/* quick info rows (e.g., “Mode · Location”, dates, fee) */
+.meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  font-size: .95rem;
+  color: #cfcfcf;
+}
+.meta-line b { color: #fff; }
+
+/* two-column helper (use if you want Overview + Quick facts side-by-side) */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+@media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
+
+/* small badges / pills (optional) */
+.badge {
+  display: inline-block;
+  background: #0f244a;
+  color: #a8d0ff;
+  border: 1px solid #2b74df;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: .8rem;
+  margin: 4px 6px 0 0;
+}
+
+/* CTA buttons */
+.course-btn,
+.course-btn-outline {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .2s ease, background .25s ease, color .25s ease, border-color .25s ease;
+}
+
+.course-btn {
+  background: #2b74df;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(43,116,223,.35);
+}
+.course-btn:hover { background: #1b4f9d; transform: translateY(-2px); }
+
+.course-btn-outline {
+  border: 2px solid #2b74df;
+  color: #a8c9ff;
+}
+.course-btn-outline:hover {
+  background: #2b74df;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* simple schedule table (if used) */
+.table-schedule {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.5);
+}
+.table-schedule th,
+.table-schedule td {
+  padding: 12px 14px;
+  border: 1px solid #2a2a2a;
+  text-align: left;
+}
+.table-schedule th {
+  background: #0f244a;
+  color: #cfe4ff;
+  font-weight: 700;
+}
+.table-schedule tr:nth-child(even) { background: #141414; }
+.table-schedule tr:nth-child(odd)  { background: #171717; }
+
+/* small links inside cards */
+.course-container a {
+  color: #8ec2ff;
+  text-decoration: none;
+}
+.course-container a:hover { text-decoration: underline; }

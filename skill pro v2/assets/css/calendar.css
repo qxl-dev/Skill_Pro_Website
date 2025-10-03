@@ -1,0 +1,170 @@
+/* Page Background */
+body {
+    background: linear-gradient(135deg, #111, #222, #2a2a2a);
+    color: #eee;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero */
+  .calendar-hero {
+    background: linear-gradient(135deg, #00467f, #1e3c72);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+  .calendar-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .calendar-hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  
+  /* Calendar Container */
+  .calendar-wrap {
+    background: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+  }
+  
+  /* Header */
+  .cal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .cal-header h2 {
+    color: #fff;
+    margin: 0;
+  }
+  .cal-header .selectors select {
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #fff;
+  }
+  .nav-btn {
+    background: #00467f;
+    color: #fff;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .nav-btn:hover {
+    background: #00335a;
+  }
+  
+  /* Grid */
+  .cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+  }
+  .cal-grid .dow {
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    background: #333;
+    color: #9dc4f0;
+    border-radius: 6px;
+  }
+  
+  /* Day Cells */
+  .day {
+    background: #2a2a2a;
+    border-radius: 8px;
+    padding: 8px;
+    min-height: 110px;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .day:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  }
+  .day.other {
+    background: #111;
+    color: #555;
+  }
+  .day .date {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Highlight Today */
+  .day.today {
+    border: 2px solid #4e73df;
+    background: #333;
+  }
+  
+  /* Events */
+  .ev {
+    margin-top: 6px;
+    padding: 6px;
+    background: #00467f;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .ev .t {
+    font-weight: bold;
+    display: block;
+  }
+  .ev .m {
+    font-size: 11px;
+    opacity: 0.8;
+  }
+  
+  /* Weekends Disabled */
+  .cal-grid .dow:nth-child(6),
+  .cal-grid .dow:nth-child(7),
+  .day:nth-child(7n),
+  .day:nth-child(7n-1) {
+    background: #111 !important;
+    color: #666 !important;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  /* Extra Section: Upcoming Events */
+  .upcoming {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  }
+  .upcoming h2 {
+    color: #9dc4f0;
+    margin-bottom: 15px;
+  }
+  .upcoming ul {
+    list-style: none;
+    padding: 0;
+  }
+  .upcoming li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #2a2a2a;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  .upcoming li:hover {
+    background: #333;
+  }
+  

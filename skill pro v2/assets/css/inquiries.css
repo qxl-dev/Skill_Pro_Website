@@ -1,0 +1,130 @@
+/* Background */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #eee;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Page Wrapper */
+  .inquiries-page {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Hero Section */
+  .inquiries-hero {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .inquiries-hero h1 {
+    font-size: 2.5rem;
+    color: #4e9fff;
+    margin-bottom: 10px;
+  }
+  .inquiries-hero p {
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  /* Container Layout */
+  .inquiries-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+  }
+  @media (max-width: 768px) {
+    .inquiries-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    background: #1c1f26;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+  .contact-info h2 {
+    color: #4e9fff;
+    margin-bottom: 15px;
+  }
+  .contact-info p {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+  }
+  
+  /* Inquiry Form */
+  .inquiry-form {
+    background: #1c1f26;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+  .inquiry-form h2 {
+    color: #4e9fff;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 18px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #262b33;
+    color: #fff;
+    font-size: 14px;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #4e9fff;
+    box-shadow: 0 0 5px rgba(78,159,255,0.5);
+  }
+  
+  /* Messages */
+  .msg {
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .msg.success {
+    background: rgba(0, 255, 100, 0.15);
+    color: #62ff9d;
+  }
+  .msg.error {
+    background: rgba(255, 0, 0, 0.15);
+    color: #ff7d7d;
+  }
+  
+  /* Button */
+  .btn-send {
+    background: linear-gradient(135deg, #4e73df, #1c3faa);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+  }
+  .btn-send:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+  }
+  

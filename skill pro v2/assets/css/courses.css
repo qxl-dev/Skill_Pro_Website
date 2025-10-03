@@ -1,0 +1,197 @@
+/* ===============================
+   Courses Listing Page – Stylish Dark
+================================= */
+
+/* Background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #121212);
+  color: #eee;
+}
+
+/* -------------------------------
+   Hero Section
+-------------------------------- */
+.courses-hero {
+  background: linear-gradient(135deg, #111, #1b3f7a, #2671d5);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.courses-hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.04) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.courses-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 0 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.courses-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  z-index: 1;
+  position: relative;
+}
+
+/* -------------------------------
+   Filter Bar
+-------------------------------- */
+.filter-bar {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.filter-form input,
+.filter-form select {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+  background: #111;
+  color: #eee;
+}
+
+.filter-form button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #2671d5;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-form button:hover {
+  background: #1b4f9d;
+  transform: translateY(-2px);
+}
+
+/* -------------------------------
+   Courses Grid
+-------------------------------- */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* -------------------------------
+   Course Cards
+-------------------------------- */
+.course-card {
+  background: #111;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(38,113,213,0.6);
+}
+
+/* Card Image */
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
+.course-card:hover img {
+  filter: brightness(1);
+}
+
+/* Category pill inside image */
+.course-card .category-pill {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(38,113,213,0.85);
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+/* Card Content */
+.course-info {
+  padding: 18px;
+}
+
+.course-info h3 {
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+  color: #79b5ff;
+}
+
+.course-info .desc {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: #ccc;
+  min-height: 50px;
+}
+
+.course-info .fee {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #eee;
+}
+
+.course-info .instructor,
+.course-info .schedule {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-bottom: 5px;
+}
+
+/* CTA Button */
+.course-info .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: #2671d5;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.course-info .btn:hover {
+  background: #1b4f9d;
+  transform: translateY(-2px);
+}
