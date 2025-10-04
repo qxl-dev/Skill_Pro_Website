@@ -49,11 +49,14 @@ $imageMap = [
 
 <link rel="stylesheet" href="assets/css/courses.css?v=<?php echo time(); ?>">
 
-<!-- Hero Banner -->
-<div class="courses-hero">
-  <h1>Explore Our Courses</h1>
-  <p>SkillPro Institute offers practical training programs for your future career.</p>
-</div>
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Explore Our Courses</h1>
+    <p>SkillPro Institute offers practical training programs for your future career.</p>
+  </div>
+</section>
+
 
 <!-- Search + Filter Bar -->
 <div class="filter-bar">

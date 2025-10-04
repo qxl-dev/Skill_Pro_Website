@@ -17,9 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['role'] = $user['role'];
         $_SESSION['name'] = $user['full_name'];
 
-        if ($role === 'admin') header("Location: /admin/index.php");
-        elseif ($role === 'instructor') header("Location: /instructor/dashboard.php");
-        else header("Location: /student/dashboard.php");
+        if ($role === 'admin') header("Location: admin/index.php");
+        elseif ($role === 'instructor') header("Location: instructor/dashboard.php");
+        else header("Location: student/dashboard.php");
+
         exit();
     } else {
         $error = "Invalid credentials. Please try again.";

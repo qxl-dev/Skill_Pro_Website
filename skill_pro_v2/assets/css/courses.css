@@ -1,0 +1,329 @@
+/* === PAGE BACKGROUND === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #1b0033, #ffffff10);
+  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* === HERO SECTION === */
+.course-hero {
+  background: linear-gradient(135deg, #2a004f, #000000 60%);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  border-bottom: 2px solid #5b00ff;
+  box-shadow: 0 10px 30px rgba(91, 0, 255, 0.3);
+}
+
+.course-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.course-hero p {
+  color: #cfc6ff;
+  font-size: 1.2rem;
+}
+
+/* === FIXED & BEAUTIFIED SEARCH BAR === */
+.course-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 40px auto 60px;
+  flex-wrap: wrap;
+  background: rgba(25, 25, 40, 0.6);
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(100, 60, 255, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.course-filter input[type="text"],
+.course-filter select {
+  background: linear-gradient(145deg, #0d0d0f, #1a002b);
+  border: 1px solid rgba(130, 90, 255, 0.6);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  width: 260px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 8px rgba(80, 0, 255, 0.3);
+}
+
+.course-filter input::placeholder {
+  color: #b6aaff;
+  opacity: 0.7;
+}
+
+.course-filter input:focus,
+.course-filter select:focus {
+  border-color: #9a60ff;
+  box-shadow: 0 0 12px rgba(140, 90, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+.course-filter button {
+  background: linear-gradient(135deg, #6a00ff, #a84bff);
+  border: none;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(90, 0, 255, 0.4);
+}
+
+.course-filter button:hover {
+  background: #8a3eff;
+  box-shadow: 0 0 25px rgba(120, 60, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+
+/* === COURSE GRID === */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+  padding: 30px 5%;
+}
+
+/* === COURSE CARD === */
+.course-card {
+  background: linear-gradient(145deg, #121212, #1a0030);
+  border: 1px solid rgba(100, 60, 255, 0.2);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease;
+  position: relative;
+  min-height: 450px;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(130, 80, 255, 0.6);
+}
+
+/* === CATEGORY TAG === */
+.course-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(135deg, #6c00ff, #9a40ff);
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* === IMAGE === */
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.course-card:hover img {
+  transform: scale(1.05);
+}
+
+/* === INFO SECTION === */
+.course-info {
+  padding: 25px;
+}
+
+.course-info h3 {
+  font-size: 1.3rem;
+  color: #cfd8ff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px rgba(100, 100, 255, 0.4);
+}
+
+.course-info .category {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.course-info .desc {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.6;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+
+.course-info .fee {
+  color: #8a7cff;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+/* === BUTTON === */
+.course-info .btn {
+  display: inline-block;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #5b00ff, #9a40ff);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.course-info .btn:hover {
+  background: #7d2eff;
+  box-shadow: 0 0 18px rgba(140, 90, 255, 0.8);
+  transform: translateY(-3px);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .course-filter {
+    flex-direction: column;
+  }
+
+  .course-card {
+    min-height: 380px;
+  }
+}
+
+/* ==== Modern Filter Bar === */
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  background: rgba(20, 10, 30, 0.6);
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(140, 60, 255, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+/* Search + Dropdown */
+.filter-form input[type="text"],
+.filter-form select {
+  background: linear-gradient(145deg, #0b0b0d, #1a0025);
+  border: 1px solid rgba(150, 90, 255, 0.6);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  width: 250px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 10px rgba(100, 0, 255, 0.25);
+}
+
+.filter-form input::placeholder {
+  color: #b6aaff;
+  opacity: 0.8;
+}
+
+.filter-form input:focus,
+.filter-form select:focus {
+  border-color: #b36bff;
+  box-shadow: 0 0 15px rgba(140, 90, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+/* Filter button */
+.filter-form button {
+  background: linear-gradient(135deg, #6a00ff, #a84bff);
+  border: none;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 18px rgba(90, 0, 255, 0.5);
+}
+
+.filter-form button:hover {
+  background: #8a3eff;
+  box-shadow: 0 0 25px rgba(140, 60, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+/* hero banner */
+
+/* ===== Hero Section ===== */
+.hero-section {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: 
+    linear-gradient(135deg, rgba(10,0,30,0.8), rgba(0,0,0,0.9)),
+    url('../images/campus.jpg') no-repeat center center/cover;
+  box-shadow: 0 0 40px rgba(120, 0, 255, 0.3);
+  overflow: hidden;
+}
+
+/* Optional soft overlay animation */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(160, 0, 255, 0.25), transparent 60%);
+  mix-blend-mode: screen;
+  animation: pulseGlow 6s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  from { opacity: 0.4; }
+  to { opacity: 0.8; }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 0 0 20px rgba(200, 150, 255, 0.9);
+}
+
+.hero-content p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #d6c9ff;
+  text-shadow: 0 0 10px rgba(160, 100, 255, 0.5);
+}
+
