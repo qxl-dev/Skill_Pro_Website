@@ -1,4 +1,7 @@
 
+-- This page contains the querries used to create tables if importing to phpmyadmin pls use spdb.sql
+
+
 -- Users (Admin, Instructors, Students)
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,

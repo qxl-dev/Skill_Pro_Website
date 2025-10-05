@@ -1,6 +1,4 @@
-/* -----------------------------
-   Background only (no layout!)
------------------------------- */
+/* Background only (no layout!) */
 body {
     /* keep the dark gradient you liked */
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -9,10 +7,7 @@ body {
     color: #eee;
   }
   
-  /* -----------------------------
-     Login page wrapper
-     (centers ONLY the card)
-  ------------------------------ */
+  /* Login page wrapper */
   .login-page {
     /* use its own layout so header/footer remain full width */
     display: flex;
@@ -23,9 +18,7 @@ body {
     min-height: 70vh;
   }
   
-  /* -----------------------------
-     Card
-  ------------------------------ */
+  /* Card */
   .login-card {
     background: #1c1f26;
     color: #fff;
@@ -47,9 +40,7 @@ body {
     color: #cfd3da;
   }
   
-  /* -----------------------------
-     Error
-  ------------------------------ */
+  /* Error */
   .error {
     background: rgba(255,0,0,0.12);
     color: #ff7d7d;
@@ -59,9 +50,7 @@ body {
     font-size: 14px;
   }
   
-  /* -----------------------------
-     Form
-  ------------------------------ */
+  /* Form*/
   .form-group { margin-bottom: 18px; text-align: left; }
   .form-group label {
     display: block;
@@ -89,9 +78,8 @@ body {
     box-shadow: 0 0 0 3px rgba(78,115,223,.25);
   }
   
-  /* -----------------------------
-     Button
-  ------------------------------ */
+  /* Button */
+
   .btn-login {
     width: 100%;
     padding: 12px;
@@ -107,9 +95,7 @@ body {
   
   .btn-login:hover { transform: translateY(-2px); filter: brightness(1.05); }
   
-  /* -----------------------------
-     Register link
-  ------------------------------ */
+  /* Register link */
   .register-link {
     margin-top: 14px;
     font-size: 14px;

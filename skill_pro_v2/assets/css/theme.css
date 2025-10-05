@@ -241,14 +241,14 @@ body {
   padding-top: var(--header-h);
 }
 
-/* Remove any previous "push down" on containers */
+
 main, .container {
   margin-top: 0 !important;
 }
 
 /* Header */
 .site-header {
-  position: absolute;   /* not fixed anymore */
+  position: absolute;   
   top: 0;
   left: 0;
   width: 100%;

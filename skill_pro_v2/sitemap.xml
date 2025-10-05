@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>http://localhost/skill_pro_v2/index.php</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url><loc>http://localhost/skill_pro_v2/courses.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/calendar.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/notices.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/inquiries.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/login.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/register.php</loc></url>
+
+  <url><loc>http://localhost/skill_pro_v2/student/dashboard.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/student/my_registrations.php</loc></url>
+
+  <url><loc>http://localhost/skill_pro_v2/instructor/dashboard.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/instructor/my_courses.php</loc></url>
+
+  <url><loc>http://localhost/skill_pro_v2/admin/index.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/admin/manage_users.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/admin/manage_courses.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/admin/manage_schedules.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/admin/manage_notices.php</loc></url>
+  <url><loc>http://localhost/skill_pro_v2/admin/manage_inquiries.php</loc></url>
+
+</urlset>
